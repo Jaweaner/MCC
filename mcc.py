@@ -26,10 +26,11 @@ def start_minecraft_server():
                 ## SIMPLY ADD or CHANGE strings
                 if "HELLO" in log:
                     # Send the 'say' command to the Minecraft server
+                    # This acts same as the terminal
                     process.stdin.write('say Hello from server\n')
                     process.stdin.flush()
                 elif "secret" in log:
-                    process.stdin.write('op Jaweaner\n')
+                    process.stdin.write('op YOURNICKNAME\n')
                     process.stdin.flush()
     except Exception as e:
         print(f"Error: {e}")
